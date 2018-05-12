@@ -1,0 +1,29 @@
+
+<div class="DivFormatting">
+  <h3 >Todo List</h3>
+<input type="text" #task>
+<button (click)="addTaskToList(task.value)"  style="background-color :#21b34f" >Add</button>
+
+<div id="inComplete">
+  <h4>In Complete</h4>
+<table cellpadding="3" >
+  <tr *ngFor="let myTask of taskList; let i = index" >
+    <td>
+    {{myTask.valueOf()}} </td> 
+    <td>
+    <button (click)="removeTaskFromList(i)" style="background-color :#fb7e23" >x</button>
+    <button (click)="addCompletedTaskToList(i, myTask.valueOf())" style="background-color :#b6df29 ">&#10004;</button>
+  </td>
+  </tr>
+</table>
+</div>
+<div id="completed">
+<h4>Completed</h4>
+<table cellpadding="3">
+  <tr *ngFor="let compTask of completTask" >
+    <td>{{compTask.valueOf()}} </td>
+  </tr>
+</table>
+</div>
+<div><button (click)="clearList(taskList, completTask)"  class="clearButton">Clear</button></div>
+</div>

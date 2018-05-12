@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+.DivFormatting{
+	margin: auto;
+    background-color: #9AD9EA;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+	
+}
+
+.DivFormatting #inComplete{
+        margin:auto;   
+    width: 80%;
+    
+}
+
+table{
+    margin:auto;
+    border: 2px solid rgb(241, 235, 235);
+    background-color: #D7eaf2;
+}
+.DivFormatting #completed{
+   margin: auto;
+   width: 80%;
+   
+}
+.clearButton{
+    background-color: #d57E78; 
+    color: white;
+    
+}
